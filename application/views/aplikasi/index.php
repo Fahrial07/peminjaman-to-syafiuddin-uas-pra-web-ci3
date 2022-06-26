@@ -51,7 +51,7 @@
 											<td><?= $d->nama ?></td>
 
 											<td>
-												Rp. <?= number_format($d->pinjam, 0, 0) ?>
+												Rp. <?= number_format($d->pinjam, 0) ?>
 											</td>
 
 											<td>
@@ -62,7 +62,7 @@
 												$hasil = $persen * $pin;
 												?>
 
-												Rp. <?= number_format($hasil, 0, 0) ?> ( <?= $d->bunga ?> % )
+												Rp. <?= number_format($hasil, 0) ?> ( <?= $d->bunga ?> % )
 											</td>
 
 											<td>
@@ -75,7 +75,7 @@
 												$jumlah = $hasil * $d->jangka_waktu
 												?>
 
-												Rp. <?= number_format($jumlah, 0, 0) ?>
+												Rp. <?= number_format($jumlah, 0) ?>
 											</td>
 
 											<td>
@@ -84,7 +84,7 @@
 												$bayar = $jumlah + $d->pinjam;
 												?>
 
-												Rp. <?= number_format($bayar, 0, 0) ?>
+												Rp. <?= number_format($bayar, 0) ?>
 											</td>
 											<td>
 												<div class="btn-group">
